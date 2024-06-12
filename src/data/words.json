@@ -1,0 +1,47 @@
+[
+    {
+      "id": "16365",
+      "english": "flower",
+      "transcription": "[ˈflaʊər]",
+      "russian": "цветок",
+      "tags": "nature",
+      "tags_json": "[\"nature\"]",
+      "boolean": "true"
+    },
+    {
+      "id": "16372",
+      "english": "education",
+      "transcription": "|edʒʊˈkeɪʃ(ə)n|",
+      "russian": "образование",
+      "tags": "education",
+      "tags_json": "[\"\"]",
+      "boolean": "false"
+    },
+    {
+      "id": "16376",
+      "english": "opacity",
+      "transcription": "[oʊˈpæsɪti]",
+      "russian": "непрозрачность",
+      "tags": "capacity",
+      "tags_json": "[\"\"]",
+       "boolean": "true"
+    },
+    {
+      "id": "16378",
+      "english": "open-field",
+      "transcription": "[ˈəʊpnˈfiːld]",
+      "russian": "неогороженный",
+      "tags": "words",
+      "tags_json": "[\"\"]",
+       "boolean": "true"
+    },
+    {
+      "id": "16379",
+      "english": "opera-glass",
+      "transcription": "[ˈɒpərəˌɡlɑːs]",
+      "russian": "театральный бинокль",
+      "tags": "teatre",
+      "tags_json": "[\"\"]",
+       "boolean": "true"
+    }
+  ]

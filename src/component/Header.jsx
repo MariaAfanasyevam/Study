@@ -1,7 +1,8 @@
+import styles from "../component/header.css"
 function Header() {
     return (
-        <header>
-        <h1> To Do List</h1>
+        <header className='header'>
+        <h1> Переводчик слов</h1>
         </header>
     );
 }

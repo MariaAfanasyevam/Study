@@ -1,8 +1,8 @@
 function Footer() {
     return (
-        <header>
-        <h1> To Do List</h1>
-        </header>
+        <footer>
+        <h1> Справка</h1>
+        </footer>
     );
 }
 export default Footer
