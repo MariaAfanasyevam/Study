@@ -1,0 +1,28 @@
+.translator
+{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    height:200px;
+    margin: 10px;
+    justify-content: center;
+    
+}
+.translatorCard
+{
+    
+    width:200px;
+    height:200px;
+   background-color: rgb(176, 245, 176);
+text-align: center;
+margin: 10px;
+}
+.containerCard
+{
+    align-content: center;
+    justify-content: center;
+}
+.btnCheck
+{
+    background-color: aquamarine;
+}
