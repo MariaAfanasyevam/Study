@@ -21,8 +21,17 @@ margin: 10px;
 {
     align-content: center;
     justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .btnCheck
 {
     background-color: aquamarine;
+}
+
+.count
+{
+    align-items: center;
+    font: 14px;
 }

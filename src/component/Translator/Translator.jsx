@@ -1,34 +1,57 @@
 import styles from "./translator.css"
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import data from "../../data/words.json"
 let index;
  index= Math.floor(Math.random() * Object.keys(data).length);
-
+let length=Object.keys(data).length;
  const Translator = ({words}) => {
  const { id, english, russian, transcription} = words;
  const [isSelected, setIsSelected] = useState (true);
- 
+ const [count, setCount] = useState (0);
 
+ useEffect (() => {
+    document.title = `Count: ${count}`;
+ }, [count]);
+
+ function increaseCount () {
+   
+    (count === (length-1)) ?  setCount (count) :  setCount (count+1);
+    setIsSelected(true);
+ }
+
+ const decreaseCount = () => {
+    (count === 0) ?  setCount (0) :  setCount (count-1);
+    setIsSelected(true);
+
+ };
+ index = count;
     return (
-        <container className= 'containerCard'>
+        <div>
+        <section className= 'containerCard'>
+            <div><button onClick = {decreaseCount}>-</button></div>
     <div >
              {
     isSelected ? (
       <div className="translatorCard">
       <p>{words[index].english}</p> 
       <p>{words[index].transcription}</p>
+     
       <button className='btnCheck' onClick= {() => setIsSelected(false)}> Проверить</button>
       </div>
      
          
    
          ) : (
-    <div  className="translatorCard" /*/onClick={() => setIsSelected(true)}*/>
+    <div  className="translatorCard" >
         <p>{words[index].english}</p> 
         <p>{words[index].transcription}</p>
          <p>{words[index].russian}</p>
             </div> )}
             </div>
-            </container>
+             <div><button onClick= {increaseCount}>+</button></div> 
+             </section>
+             <section class='count'>  {count+1}/{length}</section> 
+         </div>   
+            
   )}
   export default Translator
