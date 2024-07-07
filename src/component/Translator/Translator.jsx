@@ -27,6 +27,7 @@ let length=Object.keys(data).length;
  index = count;
     return (
         <div>
+         <h1>Главная</h1>
         <section className= 'containerCard'>
             <div><button onClick = {decreaseCount}>-</button></div>
     <div >

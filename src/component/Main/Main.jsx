@@ -1,3 +1,6 @@
+import React from "react";
+import Card from "../Card/Card";
+import data from '../../data/words.json'
 function Main () {
    
 return (
@@ -15,6 +18,17 @@ return (
         <div className ="cell"></div>
         </div>
       </h2>
+      
+  <React.Fragment>
+      {data.map((i) => (
+        <Card
+          key={i.id}
+          english={i.english}
+         russian={i.russian}
+           transcription={i.transcription}
+        />
+      ))}
+    </React.Fragment>
    </section>
     </div>
 );

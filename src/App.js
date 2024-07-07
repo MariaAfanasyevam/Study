@@ -5,30 +5,28 @@ import Card from "./component/Card/Card";
 import data from "./data/words.json";
 import Translator from './component/Translator/Translator';
 import Main from './component/Main/Main';
+import Missing from './component/Missing/Missing';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-
+import Navbar from './component/Navbar/Navbar';
 
 function App() {
 
   return (
+    <Router>
 <div>
    
   <Header/>
-  <Translator words={data}/>
-  <Main/>
+  <Navbar/>
+  <Routes>
+  <Route path='/' element = {<Translator words={data}/>}/>
+  <Route path='/game' element = {<Main/>}/>
+   <Route path='*' element ={<Missing/>}/>
+  </Routes>
 
-  <React.Fragment>
-      {data.map((i) => (
-        <Card
-          key={i.id}
-          english={i.english}
-         russian={i.russian}
-           transcription={i.transcription}
-        />
-      ))}
-    </React.Fragment>
      <Footer/>
     </div>
+    </Router>
   );
 }
 

@@ -31,10 +31,10 @@ function Input(rowData) {
     return (
         <section >
         <div className='row'> 
-        <div className ="cell"> <input class="inputText" type="text"  value={value.english} name={'english'} onChange={handleChange}></input></div>
-         <div className ="cell"> <input class="inputText" type="text" value={value.russian} name={'russian'} onChange={handleChange}></input></div>
-         <div className ="cell">  <input class="inputText" type="text"value={value.transciprion} name={'transcription'} onChange={handleChange}></input></div>
-        <div className ="cell"> <button className= 'btn_save' onClick={handleSave}> Save</button><button className= 'btn' onClick={handleClose}>Close</button></div>
+        <div className ="cell"> <input className="inputText" type="text"  value={value.english} name={'english'} onChange={handleChange}></input></div>
+         <div className ="cell"> <input className="inputText" type="text" value={value.russian} name={'russian'} onChange={handleChange}></input></div>
+         <div className ="cell">  <input className="inputText" type="text"value={value.transciprion} name={'transcription'} onChange={handleChange}></input></div>
+        <div className ="cell"> <button classNameName= 'btn_save' onClick={handleSave}> Save</button><button className= 'btn' onClick={handleClose}>Close</button></div>
        </div>
        </section>
     );
