@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './component/Header/Header';
 import Footer from "./component/Footer/Footer";
 import Card from "./component/Card/Card";
@@ -11,7 +11,10 @@ import './App.css';
 import Navbar from './component/Navbar/Navbar';
 
 function App() {
-
+  const [numbers, setNumber] =useState(0)
+ const increaseNumber = () => {
+    setNumber(numbers+1)
+  }
   return (
     <Router>
 <div>
@@ -19,6 +22,7 @@ function App() {
   <Header/>
   <Navbar/>
   <Routes>
+
   <Route path='/' element = {<Translator words={data}/>}/>
   <Route path='/game' element = {<Main/>}/>
    <Route path='*' element ={<Missing/>}/>
