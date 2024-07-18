@@ -57,8 +57,8 @@ const [countCard, setNumber] = useState(0);
             </div>
              <div><button onClick= {increaseCount}>+</button></div> 
              </section>
-             <section class='count'>  {count+1}/{length}</section> 
-             <section class='count'>  <p>Изучено {countCard} карточек</p></section>
+             <section className='count'>  {count+1}/{length}</section> 
+             <section className='count'>  <p>Изучено {countCard} карточек</p></section>
             </div>   
             
   )
